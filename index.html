@@ -15,9 +15,8 @@
     .pdf-btn:hover { background: #1d4ed8; }
     .filter-wrap { margin: 12px 0 18px; }
     .filter-title { font-weight: 700; margin-bottom: 8px; }
-    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
-    .tag-list label { background: #e2e8f0; border-radius: 999px; padding: 6px 10px; cursor: pointer; font-size: 0.9rem; }
-    .tag-list input { margin-right: 4px; }
+    .tag-select { min-width: 280px; max-width: 100%; height: 180px; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px; background: #fff; }
+    .filter-note { color: #64748b; font-size: 0.85rem; margin-top: 6px; }
     .result-count { color: #475569; margin-bottom: 10px; }
     table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
     th, td { border: 1px solid #cbd5e1; padding: 10px; vertical-align: top; }
@@ -38,7 +37,8 @@
 
     <section class="filter-wrap">
       <div class="filter-title">タグでフィルタ</div>
-      <div id="tagFilters" class="tag-list"></div>
+      <select id="tagFilterSelect" class="tag-select" multiple></select>
+      <div class="filter-note">Ctrl / Cmd を押しながらクリックで複数選択できます。</div>
     </section>
 
     <div id="resultCount" class="result-count"></div>
@@ -62,7 +62,7 @@
     const mdPath = './specialmeetings.md';
     const metaEl = document.getElementById('meta');
     const tableBody = document.getElementById('tableBody');
-    const tagFilters = document.getElementById('tagFilters');
+    const tagFilterSelect = document.getElementById('tagFilterSelect');
     const resultCount = document.getElementById('resultCount');
 
     let allRows = [];
@@ -92,21 +92,17 @@
     }
 
     function renderFilters(tags) {
-      tagFilters.innerHTML = '';
+      tagFilterSelect.innerHTML = '';
       tags.forEach(tag => {
-        const label = document.createElement('label');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.value = tag;
-        checkbox.addEventListener('change', renderTable);
-        label.appendChild(checkbox);
-        label.append(tag);
-        tagFilters.appendChild(label);
+        const option = document.createElement('option');
+        option.value = tag;
+        option.textContent = tag;
+        tagFilterSelect.appendChild(option);
       });
     }
 
     function getSelectedTags() {
-      return [...tagFilters.querySelectorAll('input:checked')].map(input => input.value);
+      return [...tagFilterSelect.selectedOptions].map(option => option.value);
     }
 
     function renderTable() {
@@ -147,6 +143,8 @@
         const uniqueTags = [...new Set(allRows.flatMap(row => row.tags))].sort((a, b) => a.localeCompare(b, 'ja'));
         renderFilters(uniqueTags);
         renderTable();
+
+        tagFilterSelect.addEventListener('change', renderTable);
       } catch (error) {
         metaEl.textContent = 'データの読み込みに失敗しました。';
         console.error(error);
