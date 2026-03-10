@@ -1,0 +1,74 @@
+# 世界のToastmastersクラブにおける「通常例会ではないイベント」
+
+作成日: 2026-03-10
+
+開催レポートと開催案内が混在しています。
+収録件数: 65件
+
+| クラブ名 | イベント名 | イベントの概要 | ページのURL | どんな例会かのタグ |
+|---|---|---|---|---|
+| 505 Speakers Corner club（オーストラリア・メルボルン） | 505th Meeting Celebration | クラブ名にちなむ505回記念を、風船とケーキで祝う遊び心ある節目回として開催した。 | https://www.toastmasters.org/magazine/magazine-issues/2019/dec/members-forum | マイルストーン, 記念会, テーマ演出 |
+| ALE HK Toastmasters club（香港） | Team-building Hike to High Island Reservoir | 西貢のハイアイランド貯水池近くの六角柱岩エリアへチームビルディング・ハイクを実施した。 | https://www.toastmasters.org/magazine/magazine-issues/2017/april2017/membersforum | ハイキング, チームビルディング, 屋外イベント |
+| Agricultural Research Center Toastmasters Club（米国） | 2025 Speechcraft Series | 長年継続している Speechcraft。クラブ外にも開く公開短期講座として機能。 | https://arc.toastmastersclubs.org/ | Speechcraft, 継続企画 |
+| Agricultural Research Center Toastmasters Club（米国） | 5th Wednesday Speak-a-thon | 第5水曜にまとめて複数スピーチを行う特別回。発表機会を増やすための集中実施。 | https://arc.toastmastersclubs.org/ | Speakathon, スピーチ集中 |
+| Apeldoorn Toastmasters club（オランダ・アペルドールン） | Annual Barbeque Party | 年次バーベキューパーティーを開催。クラブ内交流を目的としたカジュアルな定例外イベントとして紹介されている。 | https://www.toastmasters.org/magazine/magazine-issues/2017/feb2017/membersforum | バーベキュー, 社交, 年次イベント |
+| Ballito Toastmasters Club（南アフリカ） | Launch of Ballito Toastmasters Club | 新クラブ立ち上げイベント。スピーチや体験談、地域・若者支援の打ち出しを含む広報型イベント。 | https://www.citizen.co.za/north-coast-courier/news-headlines/local-news/2025/05/16/launch-of-ballito-toastmasters-club-offers-pathway-to-public-speaking-success/ | クラブ立ち上げ, 地域広報 |
+| Bangalore Toastmasters Club（インド） | Speechcraft Program Feb-Mar 2026 | 8週間の対面短期プログラム。スピーチ、即興、ボディランゲージ、構成などを実践的に学ぶ初心者向け企画。 | https://www.meetup.com/bangalore-toastmasters-club/events/dfgmvtyjcfbmb/ | Speechcraft, 短期講座, 初心者向け |
+| Berkhamsted Speakers club（英国・イングランド） | Berkhamsted Summer Fete Outreach | 夏祭りイベントでToastmastersを地域にPR。通常例会外での認知拡大・見込み客接点づくりの事例。 | https://www.toastmasters.org/magazine/magazine-issues/2017/april2017/membersforum | アウトリーチ, 地域イベント, PR, 会員拡大 |
+| CPH City Toastmasters（デンマーク・コペンハーゲン） | 100th Meeting with Cake and Balloons | 100回目の節目をケーキと風船で祝う記念回を実施した。 | https://www.toastmasters.org/magazine/magazine-issues/2018/dec2018/3-members-forum | マイルストーン, 記念会 |
+| Cargills Bank Toastmasters（スリランカ・コロンボ） | Officer Installation Ceremony | 企業クラブとして役員就任式を開催。クラブ運営の節目を祝うフォーマルな行事として掲載されている。 | https://www.toastmasters.org/magazine/magazine-issues/2019/feb/members-forum | 就任式, 企業クラブ, セレモニー |
+| City of London Toastmasters Club（英国・ロンドン） | Online Open House | 2021年1月のオンライン・オープンハウス。約100人が参加し、イベント後1か月で6人が新規入会した事例として紹介されている。 | https://d91toastmasters.org.uk/online-open-house-case-study/ | オープンハウス, オンライン, 集客, 会員拡大 |
+| City of London Toastmasters（英国） | 29th Anniversary Celebration | 29周年を祝う記念イベント。歴代会長パネルや来賓参加を含む、節目型の特別会。 | https://d91toastmasters.org.uk/a-memorable-year-of-milestones-at-city-of-london-toastmasters/ | 周年記念, 特別会 |
+| City of London Toastmasters（英国） | Speakathon | バックトゥバックで複数スピーチをこなす集中回。発表量を増やす訓練型イベント。 | https://d91toastmasters.org.uk/a-memorable-year-of-milestones-at-city-of-london-toastmasters/ | Speakathon, スピーチ集中 |
+| City of London Toastmasters（英国） | Workshop Series (Humorous Speech / Table Topics / Evaluation Masterclass) | ユーモア、即興、評価をテーマにした複数ワークショップを実施。通常例会より学習寄りの構成。 | https://d91toastmasters.org.uk/a-memorable-year-of-milestones-at-city-of-london-toastmasters/ | ワークショップ, スキル強化 |
+| Club Tm De Ensenada（メキシコ） | Unidos por La Voz（United by Voice） | スペイン語圏クラブを世界向けに紹介するZoomイベント。6本の準備スピーチ、テーブルトピックス、論評、交流を含み、18か国から約125人が参加した。 | https://www.toastmasters.org/magazine/magazine-issues/2023/june/outside-events | 国際交流, オンライン, 特別企画, 集客 |
+| Clube Brasília Toastmasters（ブラジル） | Oratória e Liderança na Prática | 教育機関会場で開催された無料公開イベント。オラトリーとリーダーシップ実践を前面に出したアウトリーチ型。 | https://www.ifb.edu.br/brasilia/44507-ifb-campus-brasilia-recebe-encontro-de-oratoria-e-lideranca | 公開イベント, アウトリーチ, ワークショップ |
+| Coimbatore Toastmasters club（インド・タミルナードゥ州） | Family Day in Pollachi | 家族も交えてPollachiで笑い・食事・アクティビティを楽しむ午後イベントを開催した。 | https://www.toastmasters.org/magazine/magazine-issues/2017/april2017/membersforum | 家族参加, ピクニック, 社交 |
+| Dance and Toast Masters（米国） | 2025 Lip Sync Contest / Open House | ジェスチャーやダンス要素を取り入れる特色クラブによる、オープンハウス兼パフォーマンス企画。 | https://dance.toastmastersclubs.org/ | オープンハウス, 特色クラブ, パフォーマンス |
+| Desert Divas club（アラブ首長国連邦・ドバイ） | Local Park Meeting | 地元公園で屋外例会を実施。日陰でくつろぎながら行う、通常会場とは異なるアウトドア回として紹介されている。 | https://www.toastmasters.org/magazine/magazine-issues/2018/aug2018/members-forum | 屋外例会, 公園, 特別会場 |
+| Dialog Toastmasters（スリランカ・コロンボ） | Bollywood-themed Installation Ceremony | 新役員の就任式をボリウッド・テーマで演出した企画回。衣装や演出で通常例会との差別化が図られている。 | https://www.toastmasters.org/magazine/magazine-issues/2019/nov/members-forum | 就任式, テーマ例会, 祝賀, 演出型 |
+| Dublin Club（アイルランド・ダブリン） | 60th Anniversary at National Yacht Club | National Yacht Club を会場に60周年記念イベントを開催した。 | https://www.toastmasters.org/magazine/magazine-issues/2019/may/toastmasters-clubs-celebrate-milestones | 周年, 記念会, 特別会場 |
+| Elite Toastmasters Club, Jubail（サウジアラビア） | Youth Leadership Program Grand Finale | 8週間の Youth Leadership Program の修了イベント。多国籍の若年参加者と表彰を伴う大規模回。 | https://saudigazette.com.sa/article/180068 | Youth Leadership Program, 修了式, 青少年 |
+| Elite Toastmasters Club（フィリピン・ケソンシティ） | 9th Anniversary “Tip of the Hat” | District 75 leaders も参加した9周年会。参加者は “Tip of the Hat” テーマに合わせて帽子を着用した。 | https://www.toastmasters.org/magazine/magazine-issues/2020/sept/members-forum | 周年, テーマ例会, 記念会, 来賓参加 |
+| Engadine District Club（オーストラリア・ニューサウスウェールズ州） | 45th Club Anniversary | クラブ創設者と初代会長も写る45周年記念イベント。歴史性の強い節目会として紹介されている。 | https://www.toastmasters.org/magazine/magazine-issues/2020/apr/members-forum | 周年, 記念会, 創設者参加 |
+| George Burton Toastmasters（カナダ・ノバスコシア州ハリファックス） | Family Picnic & Career Skills Panel | 家族同伴のピクニックとして、Ice Breakers・Table Topics・キャリアにおけるToastmasters技能を語るパネルを組み合わせたイベントを開催した。 | https://www.toastmasters.org/magazine/magazine-issues/2019/nov/members-forum | ピクニック, 家族参加, パネル, テーブルトピックス |
+| Georgetown Toastmasters club（ガイアナ・ジョージタウン） | 60th Anniversary Celebration | クラブ60周年を祝福。会員は同クラブをカリブ地域最古のクラブだとしている。 | https://www.toastmasters.org/magazine/magazine-issues/2019/aug/members-forum | 周年, カリブ地域, 記念会 |
+| Great America Speakers club（米国・カリフォルニア州サンタクララ） | Personal Stories Picnic | 企業クラブのメンバー同士がより親しくなることを目的に、個人的な物語を共有するピクニックを開催した。 | https://www.toastmasters.org/magazine/magazine-issues/2019/dec/members-forum | ピクニック, 企業クラブ, 交流, ストーリーテリング |
+| Horana Toastmasters（スリランカ・ホラナ） | Third Installation Ceremony | 3回目の役員就任式を祝うセレモニーとして掲載されている。 | https://www.toastmasters.org/magazine/magazine-issues/2018/dec2018/3-members-forum | 就任式, セレモニー |
+| Lasin Toastmasters（サウジアラビア・ジェッダ） | 3rd Anniversary with Team-building Games | 3周年記念会でチームビルディングゲームを取り入れ、協働力や発想力を高める構成にしていた。 | https://www.toastmasters.org/magazine/magazine-issues/2020/sept/members-forum | 周年, チームビルディング, 記念会 |
+| London Victorians（英国） | Running an Open House | 75名参加・49名ゲストの大規模オープンハウス。15分ワークショップ、Table Topics、証言スピーチ、交流タイムまで含む集客型イベント。 | https://d91toastmasters.org.uk/running-an-open-house/ | オープンハウス, 集客, ゲスト向け |
+| Long Beach Gavel Toastmasters Club（米国・カリフォルニア州） | 88th Anniversary on Zoom | Zoom上で88周年を祝うオンライン記念会。長寿クラブがオンラインでも節目を維持した事例。 | https://www.toastmasters.org/magazine/magazine-issues/2021/august/members-forum | 周年, オンライン, 記念会 |
+| Millennium Toastmasters Club（スリランカ・コロンボ） | 20th Anniversary After Months of Online Meetings | 数か月のオンライン例会を経た後に20周年を祝福した。オンライン運営期の節目イベントとして紹介されている。 | https://www.toastmasters.org/magazine/magazine-issues/2021/august/members-forum | 周年, オンライン, 記念会 |
+| Motorola Penang club（マレーシア・ペナン） | Outdoor Table Topics at Station 5 | ジョージタウン近郊の人気スポット Station 5 の屋外で、特別テーブルトピックス回を実施した。 | https://www.toastmasters.org/magazine/magazine-issues/2018/aug2018/members-forum | 屋外例会, テーブルトピックス, 特別会場 |
+| Nagpur Toastmasters Club（インド・ナグプール） | 150th Meeting Picnic & “Get Outdoors” Theme | 150回記念をピクニック形式と “get outdoors” テーマで開催し、通常会場外で節目を祝った。 | https://www.toastmasters.org/magazine/magazine-issues/2021/jan/members-forum | マイルストーン, ピクニック, 屋外例会 |
+| New Life Toastmasters Club（米国・マサチューセッツ州） | New Life and TTMC Joint Club Contest | 2019年2月17日に他クラブと合同でクラブコンテストを開催。通常例会ではない合同企画としてクラブサイトに掲載されている。 | https://nltmc.toastmastersclubs.org/ | 合同例会, コンテスト, クラブ交流 |
+| Newcastle Toastmasters Club（オーストラリア） | 2024 Halloween | ハロウィンをテーマにした季節イベント。演題や雰囲気づくりをテーマ化した特別例会。 | https://newcastletoastmasters.com/2024-halloween | テーマ例会, 季節イベント |
+| Newcastle Toastmasters Club（オーストラリア） | 2024 Humour Workshop | ユーモアやコメディの組み立て方を学ぶ特別ワークショップ。 | https://newcastletoastmasters.com/2024-humour-workshop | ワークショップ, ユーモア |
+| Newcastle Toastmasters Club（オーストラリア） | 2024 Mid-Year Debate | 説得と反駁を鍛える友好的なディベートイベント。通常例会より対立構造が強い学習形式。 | https://newcastletoastmasters.com/midyear-debate-2024 | ディベート, 特別会 |
+| Newcastle Toastmasters Club（オーストラリア） | 2025 Speechcraft Public Speaking Short Course | 公開型の短期集中コース。仕事の発表や結婚式スピーチなど実用目的にもつながる構成。 | https://newcastletoastmasters.com/feb-march-2025-speechcraft-public-speaking-short-course | Speechcraft, 短期講座 |
+| Newcastle Toastmasters Club（オーストラリア） | Open Night 2023 | Toastmasters の雰囲気と参加機会を紹介するショーケース型の公開夜会。 | https://newcastletoastmasters.com/open-night-2023 | オープンハウス, 体験会, ゲスト向け |
+| Nokia Noida Toastmasters（インド・ノイダ） | 200th Meeting Celebration | スポンサー企業Nokia Networksの関係者とDistrict 41 Division Cのリーダーが参加し、200回記念を祝った。 | https://www.toastmasters.org/magazine/magazine-issues/2019/aug/members-forum | マイルストーン, 企業クラブ, 来賓参加 |
+| Ottawa Coaches Corner Toastmasters（カナダ） | Open House | ゲストにクラブ文化と学習環境を紹介する公開体験会。オンライン参加導線も明確。 | https://coach.toastmastersclubs.org/ | オープンハウス, ゲスト向け, オンライン |
+| Parramatta Club（オーストラリア・パラマタ） | 50th Anniversary Celebration | 創設者を含む130人超が参加し、歴代会長パレードとゲストスピーカーを含む50周年イベントを開催した。 | https://www.toastmasters.org/magazine/magazine-issues/2017/feb2017/membersforum | 周年, 記念会, 来賓参加, 大規模 |
+| Randburg Toastmasters（南アフリカ・ヨハネスブルグ） | 45th Anniversary Celebration | 45周年を祝う記念イベントとしてMembers’ Forumに掲載されている。 | https://www.toastmasters.org/magazine/magazine-issues/2019/feb/members-forum | 周年, 記念会 |
+| SPJ Toastmasters Club, Dubai（UAE） | 2nd Annual Public Speaking Internal Club Contest | Table Topics・Evaluation・Humorous Speech を含むクラブ内コンテスト。 | https://www.spjain.ae/blog/events/spj-toastmasters-club-in-dubai-hosts-its-2nd-annual-public-speaking-internal-club-contest | コンテスト, クラブ内大会 |
+| Sasebo Fleet Activities Toastmasters（日本・長崎県佐世保） | Hanami Table Topics Session | 2018年4月1日、花見の伝統に合わせて花の森公園で特別テーブルトピックス回を開催。桜の下での季節行事型イベント。 | https://www.toastmasters.org/magazine/magazine-issues/2018/aug2018/members-forum | 屋外例会, テーブルトピックス, 季節行事, 花見 |
+| Scholars Malayalam Toastmasters Club（UAE・ラス・アル・ハイマ） | International Day of Happiness Celebration | 3月20日の国際幸福デーに合わせた記念回。通常例会に季節・記念日テーマを重ねた特別企画として紹介されている。 | https://www.toastmasters.org/magazine/magazine-issues/2021/july/members-forum | 記念日, テーマ例会, 祝祭 |
+| Shanghai Xujiahui Toastmasters（中国・上海） | Shanghai Disney Resort Team Building | 上海ディズニーリゾートで役員によるチームビルディングを実施。通常例会ではなく、運営チーム強化を目的とした活動として紹介されている。 | https://www.toastmasters.org/magazine/magazine-issues/2019/feb/members-forum | チームビルディング, 役員活動, 屋外イベント |
+| Speak and Lead Toastmasters（ブルガリア・ソフィア） | Rila Mountains Retreat | 2023年4月にリラ山地のリゾートで2日間のリトリートを実施。正式な例会とスピーチコンテストに加え、食事・ダンス・歌も行われ、家族や非会員も参加した。 | https://www.toastmasters.org/magazine/magazine-issues/2023/june/outside-events | 合宿, コンテスト, 社交, 家族参加 |
+| São Paulo Toastmasters（ブラジル） | Desenvolva a sua comunicação e liderança em um clube de oratória | 一般参加者向けの公開体験イベント。準備スピーチ、即興、建設的フィードバックを紹介する導入型イベント。 | https://ingressolink.com.br/evento/desenvolva-a-sua-comunicacao-e-lideranca-em-um-clube-de-oratoria-sao-paulo-toastmasters-3285034 | 公開体験会, ゲスト向け, オープンミーティング |
+| Tampines Tamil Toastmasters Club（シンガポール） | 50th Club Meeting + Pongal Celebration | 地域のCOVID-19ガイドラインに従いながら、50回目の例会と収穫祭Pongalをあわせて祝った。 | https://www.toastmasters.org/magazine/magazine-issues/2021/july/members-forum | マイルストーン, 祝祭, 文化イベント |
+| Thame Speakers（英国） | 44 Years Strong | 44周年記念イベント。Tall Tales Contest に加え、ガラディナーと懇親を伴う祝賀型イベント。 | https://d91toastmasters.org.uk/44-years-stong-celebrating-thame-speakers/ | 周年記念, コンテスト, 懇親 |
+| The Restored Toastmasters Club（米国） | Holiday Themed Meeting | 祝祭シーズンに合わせて構成を変えるテーマ例会。通常例会とは異なる雰囲気づくりが主眼。 | https://therestored.toastmastersclubs.org/ | テーマ例会, 季節イベント |
+| The Restored Toastmasters Club（米国） | International Speech Contest | クラブ内の International Speech Contest。競技要素が中心の特別会。 | https://therestored.toastmastersclubs.org/ | コンテスト, 国際スピーチ |
+| The Restored Toastmasters Club（米国） | Open House #1 | ゲスト招待とクラブ紹介を目的とした公開体験回。 | https://therestored.toastmastersclubs.org/ | オープンハウス, 集客 |
+| Toastmasters Club of Dwarka（インド・ニューデリー） | 500th Meeting, First In-person After Lockdown | 500回記念を対面で祝福。初回ロックダウン後、メンバーが直接集まる初めての機会にもなった。 | https://www.toastmasters.org/magazine/magazine-issues/2021/july/members-forum | マイルストーン, 対面再開, 記念会 |
+| Toastmasters Club of Pune（インド・プネー） | 18 DTM Special Roles Meeting | 特別回として18人のDistinguished Toastmastersが会の役割を担当し、100人超の参加者に濃密なToastmasters体験を提供した。 | https://www.toastmasters.org/magazine/magazine-issues/2019/dec/members-forum | 特別企画, ベテラン登壇, 大規模, 教育重視 |
+| Toastmasters Club of Singapore（シンガポール） | High-Quality and Informative Workshops | スピーチ原稿、プレゼン、コミュニケーション改善などを扱う公開ワークショップ群。 | https://toastmasters.org.sg/high-quality-and-informative-workshops/ | ワークショップ, スキル強化 |
+| Toastmasters Versailles（フランス・ヴェルサイユ） | Forum des Associations 出展 | ヴェルサイユ城外で毎年開かれる地域団体紹介イベントに参加し、クラブ活動をPRして新規会員獲得につなげている。 | https://www.toastmasters.org/magazine/magazine-issues/2023/june/outside-events | アウトリーチ, 地域イベント, PR, 会員拡大 |
+| Tundra Talkers Toastmasters Club（米国・アラスカ州フェアバンクス） | Park Picnic & Officer Induction | パンデミック後の外部活動強化の一環として、公園でピクニックと役員就任式を開催。12月にはポットラック付きのホリデーパーティーも実施し、新規参加につながった。 | https://www.toastmasters.org/magazine/magazine-issues/2023/june/outside-events | ピクニック, 就任式, ホリデー, 会員拡大 |
+| UTAR Sungai Long Toastmasters Club / Share & Inspire Toastmasters Club（マレーシア） | Virtual Speech Workshop 2024 | アイスブレーカー、目的ある原稿作成、ボディランゲージ、評価戦略などを扱う合同オンライン講習。 | https://news.utar.edu.my/news/2024/July/12/04/04.html | ワークショップ, 合同開催, オンライン |
+| University of Aruba Toastmasters（アルバ） | 1st Anniversary Celebration | 会員とゲストが参加して1周年を祝福した、若いクラブの節目イベント。 | https://www.toastmasters.org/magazine/magazine-issues/2017/august2017/membersforum | 周年, 記念会, ゲスト参加 |
+| Utthishta Toastmasters（インド・バンガロール） | 300th Meeting + Humorous Speech Contest + Gala Dinner | 300回記念としてユーモアスピーチコンテストとガラディナーを組み合わせた豪華な特別回を実施した。 | https://www.toastmasters.org/magazine/magazine-issues/2021/jan/members-forum | マイルストーン, コンテスト, ガラ, 記念会 |
+| West Cork Toastmasters / Infosys Toastmasters, Bhubaneswar club（アイルランド / インド） | Joint International Meeting | アイルランドとインドの2クラブが合同で例会を実施。2時間にわたり20人超のToastmastersが両国から登壇し、今後も継続したいとの声が出た。 | https://www.toastmasters.org/magazine/magazine-issues/2021/august/members-forum | 合同例会, 国際交流, オンライン, クラブ交流 |
+| Woodland Toastmasters（米国・カリフォルニア州サンタバーバラ） | 60th Anniversary Club Outing | 2019年12月、クラブ外出企画を兼ねて60周年を祝うイベントを実施した。 | https://www.toastmasters.org/magazine/magazine-issues/2020/sept/members-forum | 周年, アウトドア, クラブ外出 |
