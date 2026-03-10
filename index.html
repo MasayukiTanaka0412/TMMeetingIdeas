@@ -11,7 +11,10 @@
     h1 { margin-top: 0; font-size: 2rem; }
     .meta { color: #334155; line-height: 1.6; margin-bottom: 16px; }
     .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 20px 0 12px; }
-    .pdf-btn { display: inline-block; background: #2563eb; color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 8px; font-weight: 700; }
+    .action-btn { display: inline-block; color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 8px; font-weight: 700; }
+    .recommend-btn { background: #0f766e; }
+    .recommend-btn:hover { background: #0d5f59; }
+    .pdf-btn { background: #2563eb; }
     .pdf-btn:hover { background: #1d4ed8; }
     .filter-wrap { margin: 12px 0 18px; }
     .filter-title { font-weight: 700; margin-bottom: 8px; }
@@ -32,7 +35,8 @@
     <div id="meta" class="meta">読み込み中...</div>
 
     <div class="controls">
-      <a class="pdf-btn" href="./specialmeetings.pdf" download>PDFダウンロード</a>
+      <a class="action-btn recommend-btn" href="./recommend.html" target="_blank" rel="noopener noreferrer">おすすめ診断</a>
+      <a class="action-btn pdf-btn" href="./specialmeetings.pdf" download>PDFダウンロード</a>
     </div>
 
     <section class="filter-wrap">
