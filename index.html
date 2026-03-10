@@ -15,7 +15,7 @@
     .pdf-btn:hover { background: #1d4ed8; }
     .filter-wrap { margin: 12px 0 18px; }
     .filter-title { font-weight: 700; margin-bottom: 8px; }
-    .tag-select { min-width: 280px; max-width: 100%; height: 180px; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px; background: #fff; }
+    .tag-select { min-width: 280px; max-width: 100%; height: auto; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px; background: #fff; }
     .filter-note { color: #64748b; font-size: 0.85rem; margin-top: 6px; }
     .result-count { color: #475569; margin-bottom: 10px; }
     table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
@@ -37,7 +37,7 @@
 
     <section class="filter-wrap">
       <div class="filter-title">タグでフィルタ</div>
-      <select id="tagFilterSelect" class="tag-select" multiple></select>
+      <select id="tagFilterSelect" class="tag-select" multiple size="1"></select>
       <div class="filter-note">Ctrl / Cmd を押しながらクリックで複数選択できます。</div>
     </section>
 
@@ -108,7 +108,7 @@
     function renderTable() {
       const selectedTags = getSelectedTags();
       const visibleRows = selectedTags.length
-        ? allRows.filter(row => selectedTags.every(tag => row.tags.includes(tag)))
+        ? allRows.filter(row => selectedTags.some(tag => row.tags.includes(tag)))
         : allRows;
 
       tableBody.innerHTML = '';
