@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>特別例会のアイデア おすすめ診断</title>
+  <style>
+    :root { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; }
+    body { margin: 0; padding: 24px; background: #f8fafc; color: #0f172a; }
+    .container { max-width: 1100px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 6px 24px rgba(15, 23, 42, 0.08); }
+    h1 { margin: 0 0 12px; }
+    .description { color: #334155; margin-bottom: 20px; }
+    .question-list { display: grid; gap: 12px; margin-bottom: 20px; }
+    .question-card { border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px 14px; }
+    .question-title { font-weight: 700; margin-bottom: 8px; }
+    .choices { display: flex; gap: 18px; }
+    .actions { margin: 16px 0 10px; }
+    button { border: none; border-radius: 8px; padding: 10px 16px; font-weight: 700; cursor: pointer; background: #2563eb; color: #fff; }
+    button:hover { background: #1d4ed8; }
+    .summary { color: #475569; margin: 10px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+    th, td { border: 1px solid #cbd5e1; padding: 10px; vertical-align: top; }
+    th { background: #f1f5f9; text-align: left; }
+    tbody tr:nth-child(even) { background: #f8fafc; }
+    a { color: #1d4ed8; }
+    .meta { color: #64748b; font-size: .9rem; margin-bottom: 14px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>特別例会のアイデア おすすめ診断</h1>
+    <p class="description">10個のYes/No質問に答えると、あなたに合いそうな特別例会アイデアをハイスコア順に5件表示します。</p>
+    <div id="meta" class="meta">読み込み中...</div>
+    <section id="questionList" class="question-list"></section>
+    <div class="actions">
+      <button id="diagnoseButton" type="button">おすすめを表示</button>
+    </div>
+    <div id="resultSummary" class="summary"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>スコア</th>
+          <th>クラブ名</th>
+          <th>イベント名</th>
+          <th>イベントの概要</th>
+          <th>ページのURL</th>
+          <th>タグ</th>
+        </tr>
+      </thead>
+      <tbody id="resultBody"></tbody>
+    </table>
+  </main>
+
+  <script>
+    const mdPath = './specialmeetings.md';
+    const metaEl = document.getElementById('meta');
+    const questionListEl = document.getElementById('questionList');
+    const diagnoseButton = document.getElementById('diagnoseButton');
+    const resultSummary = document.getElementById('resultSummary');
+    const resultBody = document.getElementById('resultBody');
+
+    const questions = [
+      { id: 'q1', text: '屋外イベントをやってみたいですか？', tags: ['屋外イベント', 'アウトドア', 'ハイキング', 'ピクニック'] },
+      { id: 'q2', text: '記念回・周年など節目を重視しますか？', tags: ['マイルストーン', '記念会', '周年記念', '周年'] },
+      { id: 'q3', text: 'コンテスト中心の回に興味がありますか？', tags: ['コンテスト', '国際スピーチ'] },
+      { id: 'q4', text: 'スキル習得型（講座・ワークショップ）を重視しますか？', tags: ['ワークショップ', 'スキル強化', 'Speechcraft', '短期講座'] },
+      { id: 'q5', text: 'オンライン開催を優先したいですか？', tags: ['オンライン'] },
+      { id: 'q6', text: '会員拡大・集客につながる企画がよいですか？', tags: ['会員拡大', '集客', 'オープンハウス', '公開体験会'] },
+      { id: 'q7', text: '国際交流を取り入れたいですか？', tags: ['国際交流'] },
+      { id: 'q8', text: '社交・懇親を重視したいですか？', tags: ['社交', '懇親', 'ガラ', '家族参加'] },
+      { id: 'q9', text: '地域向けPR・アウトリーチをしたいですか？', tags: ['アウトリーチ', '地域イベント', 'PR', '地域広報'] },
+      { id: 'q10', text: 'スピーチ本数を増やす集中回が良いですか？', tags: ['Speakathon', 'スピーチ集中'] },
+    ];
+
+    let allRows = [];
+
+    function parseMarkdownTable(markdown) {
+      const lines = markdown.split('\n').map(line => line.trim());
+      const titleLine = lines.find(line => line.startsWith('# '));
+      const createdLine = lines.find(line => line.startsWith('作成日:'));
+      const countLine = lines.find(line => line.startsWith('収録件数:'));
+
+      const tableStart = lines.findIndex(line => line.startsWith('| クラブ名 |'));
+      const dataLines = lines.slice(tableStart + 2).filter(line => line.startsWith('|'));
+
+      const rows = dataLines.map((line, index) => {
+        const cells = line.split('|').slice(1, -1).map(cell => cell.trim());
+        return {
+          index,
+          club: cells[0] || '',
+          event: cells[1] || '',
+          summary: cells[2] || '',
+          url: cells[3] || '',
+          tagsText: cells[4] || '',
+          tags: (cells[4] || '').split(',').map(tag => tag.trim()).filter(Boolean),
+        };
+      });
+
+      return { titleLine, createdLine, countLine, rows };
+    }
+
+    function renderQuestions() {
+      questionListEl.innerHTML = '';
+      questions.forEach((question, idx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+        card.innerHTML = `
+          <div class="question-title">Q${idx + 1}. ${question.text}</div>
+          <div class="choices">
+            <label><input type="radio" name="${question.id}" value="yes"> Yes</label>
+            <label><input type="radio" name="${question.id}" value="no"> No</label>
+          </div>
+        `;
+        questionListEl.appendChild(card);
+      });
+    }
+
+    function collectAnswers() {
+      return questions.map(question => {
+        const selected = document.querySelector(`input[name="${question.id}"]:checked`);
+        return { ...question, answer: selected ? selected.value : null };
+      });
+    }
+
+    function scoreRows(answers) {
+      return allRows.map(row => {
+        let score = 0;
+        answers.forEach(answer => {
+          const hasRelatedTag = answer.tags.some(tag => row.tags.includes(tag));
+          if (answer.answer === 'yes' && hasRelatedTag) score += 2;
+          if (answer.answer === 'no' && !hasRelatedTag) score += 1;
+        });
+        return { ...row, score };
+      });
+    }
+
+    function renderResults(scoredRows) {
+      const top5 = scoredRows
+        .sort((a, b) => b.score - a.score || a.index - b.index)
+        .slice(0, 5);
+
+      resultBody.innerHTML = '';
+      top5.forEach(row => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${row.score}</td>
+          <td>${row.club}</td>
+          <td>${row.event}</td>
+          <td>${row.summary}</td>
+          <td><a href="${row.url}" target="_blank" rel="noopener noreferrer">${row.url}</a></td>
+          <td>${row.tagsText}</td>
+        `;
+        resultBody.appendChild(tr);
+      });
+    }
+
+    function runDiagnosis() {
+      const answers = collectAnswers();
+      const unanswered = answers.filter(answer => !answer.answer);
+      if (unanswered.length > 0) {
+        alert('10問すべてに Yes/No で回答してください。');
+        return;
+      }
+
+      const scoredRows = scoreRows(answers);
+      renderResults(scoredRows);
+      resultSummary.textContent = 'おすすめ5件をハイスコア順に表示しています。';
+    }
+
+    async function init() {
+      try {
+        renderQuestions();
+        const res = await fetch(mdPath);
+        const markdown = await res.text();
+        const parsed = parseMarkdownTable(markdown);
+        allRows = parsed.rows;
+
+        metaEl.innerHTML = `
+          <div>${parsed.titleLine || ''}</div>
+          <div>${parsed.createdLine || ''}</div>
+          <div>${parsed.countLine || ''}</div>
+        `;
+
+        diagnoseButton.addEventListener('click', runDiagnosis);
+      } catch (error) {
+        metaEl.textContent = 'データの読み込みに失敗しました。';
+        console.error(error);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

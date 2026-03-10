@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>特別例会のアイデア</title>
+  <style>
+    :root { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; }
+    body { margin: 0; padding: 24px; background: #f8fafc; color: #0f172a; }
+    .container { max-width: 1200px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 6px 24px rgba(15, 23, 42, 0.08); }
+    h1 { margin-top: 0; font-size: 2rem; }
+    .meta { color: #334155; line-height: 1.6; margin-bottom: 16px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 20px 0 12px; }
+    .pdf-btn { display: inline-block; background: #2563eb; color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 8px; font-weight: 700; }
+    .pdf-btn:hover { background: #1d4ed8; }
+    .filter-wrap { margin: 12px 0 18px; }
+    .filter-title { font-weight: 700; margin-bottom: 8px; }
+    .tag-select { min-width: 280px; max-width: 100%; height: auto; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px; background: #fff; }
+    .filter-note { color: #64748b; font-size: 0.85rem; margin-top: 6px; }
+    .result-count { color: #475569; margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+    th, td { border: 1px solid #cbd5e1; padding: 10px; vertical-align: top; }
+    th { background: #f1f5f9; text-align: left; position: sticky; top: 0; }
+    tbody tr:nth-child(even) { background: #f8fafc; }
+    a { color: #1d4ed8; }
+    .table-wrap { overflow: auto; max-height: 70vh; border: 1px solid #cbd5e1; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>特別例会のアイデア</h1>
+    <div id="meta" class="meta">読み込み中...</div>
+
+    <div class="controls">
+      <a class="pdf-btn" href="./specialmeetings.pdf" download>PDFダウンロード</a>
+    </div>
+
+    <section class="filter-wrap">
+      <div class="filter-title">タグでフィルタ</div>
+      <select id="tagFilterSelect" class="tag-select" multiple size="1"></select>
+      <div class="filter-note">Ctrl / Cmd を押しながらクリックで複数選択できます。</div>
+    </section>
+
+    <div id="resultCount" class="result-count"></div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>クラブ名</th>
+            <th>イベント名</th>
+            <th>イベントの概要</th>
+            <th>ページのURL</th>
+            <th>どんな例会かのタグ</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script>
+    const mdPath = './specialmeetings.md';
+    const metaEl = document.getElementById('meta');
+    const tableBody = document.getElementById('tableBody');
+    const tagFilterSelect = document.getElementById('tagFilterSelect');
+    const resultCount = document.getElementById('resultCount');
+
+    let allRows = [];
+
+    function parseMarkdownTable(markdown) {
+      const lines = markdown.split('\n').map(line => line.trim());
+      const titleLine = lines.find(line => line.startsWith('# '));
+      const createdLine = lines.find(line => line.startsWith('作成日:'));
+      const countLine = lines.find(line => line.startsWith('収録件数:'));
+
+      const tableStart = lines.findIndex(line => line.startsWith('| クラブ名 |'));
+      const dataLines = lines.slice(tableStart + 2).filter(line => line.startsWith('|'));
+
+      const rows = dataLines.map(line => {
+        const cells = line.split('|').slice(1, -1).map(cell => cell.trim());
+        return {
+          club: cells[0] || '',
+          event: cells[1] || '',
+          summary: cells[2] || '',
+          url: cells[3] || '',
+          tagsText: cells[4] || '',
+          tags: (cells[4] || '').split(',').map(tag => tag.trim()).filter(Boolean),
+        };
+      });
+
+      return { titleLine, createdLine, countLine, rows };
+    }
+
+    function renderFilters(tags) {
+      tagFilterSelect.innerHTML = '';
+      tags.forEach(tag => {
+        const option = document.createElement('option');
+        option.value = tag;
+        option.textContent = tag;
+        tagFilterSelect.appendChild(option);
+      });
+    }
+
+    function getSelectedTags() {
+      return [...tagFilterSelect.selectedOptions].map(option => option.value);
+    }
+
+    function renderTable() {
+      const selectedTags = getSelectedTags();
+      const visibleRows = selectedTags.length
+        ? allRows.filter(row => selectedTags.some(tag => row.tags.includes(tag)))
+        : allRows;
+
+      tableBody.innerHTML = '';
+      visibleRows.forEach(row => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${row.club}</td>
+          <td>${row.event}</td>
+          <td>${row.summary}</td>
+          <td><a href="${row.url}" target="_blank" rel="noopener noreferrer">${row.url}</a></td>
+          <td>${row.tagsText}</td>
+        `;
+        tableBody.appendChild(tr);
+      });
+
+      resultCount.textContent = `表示件数: ${visibleRows.length} / ${allRows.length}`;
+    }
+
+    async function init() {
+      try {
+        const res = await fetch(mdPath);
+        const markdown = await res.text();
+        const parsed = parseMarkdownTable(markdown);
+
+        allRows = parsed.rows;
+        metaEl.innerHTML = `
+          <div>${parsed.titleLine || ''}</div>
+          <div>${parsed.createdLine || ''}</div>
+          <div>${parsed.countLine || ''}</div>
+        `;
+
+        const uniqueTags = [...new Set(allRows.flatMap(row => row.tags))].sort((a, b) => a.localeCompare(b, 'ja'));
+        renderFilters(uniqueTags);
+        renderTable();
+
+        tagFilterSelect.addEventListener('change', renderTable);
+      } catch (error) {
+        metaEl.textContent = 'データの読み込みに失敗しました。';
+        console.error(error);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
